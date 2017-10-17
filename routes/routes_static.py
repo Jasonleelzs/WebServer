@@ -11,7 +11,7 @@ def route_index(request):
 
 
 def route_static(request):
-    filename = request.query.get('file', 'doge.gif')
+    filename = request.query.get('file', 'd1.gif')
     path = 'static/' + filename
     with open(path, 'rb') as f:
         header = b'HTTP/1.1 200 OK\r\nContent-Type: image/gif\r\n\r\n'
